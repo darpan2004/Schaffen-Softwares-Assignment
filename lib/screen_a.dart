@@ -33,7 +33,7 @@ class _ScreenAState extends State<ScreenA> {
             slivers: <Widget>[
               SliverAppBar(
                 backgroundColor: Color(0xFFC32422),
-                expandedHeight: 215 + height * 0.0975,
+                expandedHeight: height * 0.25 + height * 0.0975,
                 pinned: true,
                 title: Opacity(
                   opacity: opacity,
@@ -45,10 +45,12 @@ class _ScreenAState extends State<ScreenA> {
                     ClipRect(
                       child: Align(
                           alignment: Alignment.topCenter,
-                          heightFactor: 0.8, // adjust this value as needed
+                          heightFactor: 0.8,
+                          // adjust this value as needed
                           child: Stack(
                             children: [
                               Image.asset(
+                                height: height * 0.31,
                                 'assets/images/weeknd_img.png',
                                 fit: BoxFit.cover,
                               ),
